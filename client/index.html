@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thikku: SMS to get direction</title>
+    <meta name="description" content="SMS origin:destination to get the direction">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <section class="container body-section">
+
+    <section class="hero-unit">
+        <h1 class="brand-name"><img src="/img/logo-white.png" alt="Thikku"></h1>
+        <p class="title">
+          SMS to <strong>+1 415-851-4154</strong> and get the direction instantly
+        </p>
+        <p class="subtitle">
+          No need for 2G, 3G or 100G. One simple sms will change the way you travel.
+        </p>
+    </section>
+
+    <section class="how-it-works">
+      <h2 class="sub-heading">How it works?</h2>
+      <div class="row">
+          <div class="col-sm-6">
+              <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
+              </span>
+              <p><span class="number">1</span> <strong>Send a SMS</strong></p>
+              <p class="text-muted">
+                Send a message <strong>origin : destination</strong>
+                to <strong>+1 415-851-4154</strong>.
+                <em>You have to separate both origin and destination by colon(:)</em>
+                <br>
+                Eg: <strong>Toronto : Montreal</strong>
+              </p>
+          </div>
+          <div class="col-sm-6">
+              <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-comment fa-stack-1x fa-inverse"></i>
+              </span>
+              <p><span class="number">2</span> <strong>Receive a SMS</strong></p>
+              <p class="text-muted">
+                  As soon as Thikku receive a SMS, It will send you the direction
+                  information to same mobile number from which you sent a sms.
+              </p>
+          </div>
+      </div>
+    </section>
+
+    <section class="try-it-here">
+      <h2 class="sub-heading">Try it out here</h2>
+      <p id="result" class="text-danger"></p>
+      <form id="form-direction" class="form-direction" role="form" method="POST" action="/direction">
+        <div class="form-group">
+          <textarea id="message" rows="10" name="message" class="form-control"
+            placeholder="origin : destination eg:, Toronto : Montreal"  required></textarea>
+        </div>
+        <button class="btn btn-success" id="submit" type="submit">
+          <i class="fa fa-paper-plane"></i> Get Direction</button>
+        <a class="btn btn-default" id="clear" href="">Clear</a>
+      </form>
+    </section>
+
+    <section class="benefits">
+      <h2 class="sub-heading">Beliefs behind Thikku</h2>
+      <div class="row">
+          <div class="col-sm-4">
+              <i class="fa fa-smile-o"></i>
+              <h4>Simplicity</h4>
+              <p>You don't need to know hi tech technology to use the service.
+                Our ninjas only need to know how to send a SMS. Thats it.</p>
+          </div>
+          <div class="col-sm-4">
+              <i class="fa fa-globe"></i>
+              <h4>Anywhere around the world</h4>
+              <p>It works even in remote areas of the country where mobile
+                internet is not available or not stable.</p>
+          </div>
+          <div class="col-sm-4">
+              <i class="fa fa-mobile"></i>
+              <h4>No need for smart phone</h4>
+              <p>
+                Our service works in any phone from Nokia 1100 to iPhone 5s.
+                No Apps to install and no hassling updates.
+              </p>
+          </div>
+      </div>
+      <p class="lead highlights">
+        More than all, It is Free, forever.
+      </p>
+    </section>
+
+    <section id="footer" class="footer">
+        <div class="text-center">
+            <p>
+                Built by
+                <a class="social-twitter" href="https://www.twitter.com/fizerkhan" target="_blank">
+                  <i class="fa fa-twitter"></i> fizerkhan
+                </a>
+                with <i class="fa fa-heart love"></i> in <a href="https://www.youtube.com/watch?v=VKMyYO2g6Fc" target="_blank">Chennai (Chancey illa)</a>
+            </p>
+        </div>
+    </section>
+  </section>
+
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
